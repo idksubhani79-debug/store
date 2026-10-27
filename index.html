@@ -1,0 +1,3899 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeventhGrace — Organic Newborn Baby Clothes | Pakistan</title>
+    
+    <!-- Meta tags for baby boutique -->
+    <meta name="description" content="Pure comfort for little ones. Premium GOTS-certified organic cotton newborn baby clothing in Pakistan. Cash on Delivery nationwide.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           COLOR PALETTE & DESIGN SYSTEM
+           ========================================================================== */
+        :root {
+            --bg-color: #f7f3ee;
+            --bg-creme: #fcf9f5;
+            --bg-card: #ffffff;
+            --text-dark: #2d2621;
+            --text-muted: #736760;
+            --text-light: #9f948d;
+            --accent-color: #c98a7a;
+            --accent-hover: #b57463;
+            --accent-soft: rgba(201, 138, 122, 0.12);
+            --accent-glow: rgba(201, 138, 122, 0.25);
+            --warm-sage: #94a395;
+            --warm-butter: #faedcd;
+            --gold-accent: #d4a373;
+            --nav-bg: rgba(246, 240, 233, 0.82);
+            --nav-border: rgba(255, 255, 255, 0.7);
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --shadow-subtle: 0 4px 20px rgba(58, 47, 40, 0.05);
+            --shadow-card: 0 10px 30px rgba(45, 38, 33, 0.07);
+            --shadow-hover: 0 20px 40px -10px rgba(45, 38, 33, 0.14);
+            --radius-pill: 9999px;
+            --radius-card: 20px;
+            --radius-sm: 10px;
+            --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            --container-max: 1240px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+            line-height: 1.55;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        button {
+            border: none;
+            background: none;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        /* Section Headings */
+        .section-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 45px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-soft);
+            color: var(--accent-color);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .section-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ==========================================================================
+           1. TOP ANNOUNCEMENT BAR (PKR Delivery & COD Offers)
+           ========================================================================== */
+        .announcement-bar {
+            background: linear-gradient(90deg, #2d2621 0%, #443730 50%, #2d2621 100%);
+            color: #f7f3ee;
+            font-size: 0.8rem;
+            letter-spacing: 0.6px;
+            padding: 8px 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 60;
+            transition: transform 0.4s ease, opacity 0.4s ease, max-height 0.4s ease;
+            max-height: 50px;
+            overflow: hidden;
+        }
+
+        .announcement-bar.closed {
+            max-height: 0;
+            padding: 0;
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        .announcement-inner {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .announcement-inner strong {
+            color: #f7cbbf;
+            font-weight: 700;
+        }
+
+        .announcement-dot {
+            opacity: 0.4;
+        }
+
+        .announcement-close {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(247, 243, 238, 0.7);
+            font-size: 0.9rem;
+            padding: 6px;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .announcement-close:hover {
+            color: #ffffff;
+        }
+
+        /* ==========================================================================
+           2. HERO SECTION & BACKGROUND
+           ========================================================================== */
+        .background-container {
+            min-height: 94vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            /* High-Res Hero Image with gradient overlay */
+            background-image: 
+                linear-gradient(180deg, 
+                    rgba(247, 243, 238, 0.45) 0%, 
+                    rgba(247, 243, 238, 0.08) 25%, 
+                    rgba(247, 243, 238, 0.25) 70%, 
+                    rgba(247, 243, 238, 0.85) 100%),
+                url('Baby.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-color: var(--bg-color);
+            padding: 0 40px 30px;
+        }
+
+        /* Sticky Glass Header */
+        .header-wrapper {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            width: 100%;
+            margin-top: 15px;
+            transition: var(--transition-smooth);
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            width: 100%;
+            padding: 6px 12px;
+            transition: var(--transition-smooth);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: flex-start;
+        }
+
+        .currency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 15px;
+            border-radius: var(--radius-pill);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            white-space: nowrap;
+        }
+
+        .flag-icon {
+            font-size: 0.95rem;
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 19px;
+            height: 2px;
+            background-color: var(--text-dark);
+            border-radius: 2px;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-toggle:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Center Pill Navigation */
+        .header-center {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .nav-pill {
+            position: relative;
+            background: var(--nav-bg);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid var(--nav-border);
+            border-radius: var(--radius-pill);
+            padding: 6px 8px;
+            box-shadow: 
+                0 10px 30px -5px rgba(58, 51, 47, 0.08),
+                0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+            display: flex;
+            align-items: center;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-indicator {
+            position: absolute;
+            top: 6px;
+            height: calc(100% - 12px);
+            background: #ffffff;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 4px 12px rgba(58, 47, 40, 0.08);
+            transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+            pointer-events: none;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .nav-pill ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.94rem;
+            padding: 9px 20px;
+            border-radius: var(--radius-pill);
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-link i.chevron {
+            font-size: 0.68rem;
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .nav-item:hover .nav-link i.chevron {
+            transform: rotate(180deg);
+            color: var(--accent-color);
+        }
+
+        .nav-item:hover .nav-link,
+        .nav-item.active .nav-link {
+            color: var(--accent-color);
+        }
+
+        /* Mega Dropdown for Newborn */
+        .mega-dropdown {
+            position: absolute;
+            top: calc(100% + 14px);
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            width: 620px;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 24px;
+            box-shadow: 
+                0 20px 45px -10px rgba(58, 47, 40, 0.16),
+                0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+            z-index: 100;
+        }
+
+        .mega-dropdown::before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            width: 14px;
+            height: 14px;
+            background: #ffffff;
+            border-left: 1px solid rgba(255, 255, 255, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.9);
+        }
+
+        .nav-item.has-dropdown:hover .mega-dropdown,
+        .mega-dropdown:hover {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .mega-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 20px;
+        }
+
+        .mega-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .mega-heading {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+
+        .mega-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 9px 12px;
+            border-radius: 14px;
+            transition: var(--transition-smooth);
+        }
+
+        .mega-item:hover {
+            background: var(--accent-soft);
+            transform: translateX(4px);
+        }
+
+        .mega-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: rgba(201, 138, 122, 0.15);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+        }
+
+        .mega-item:hover .mega-icon {
+            background: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .mega-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mega-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .mega-sub {
+            font-size: 0.74rem;
+            color: var(--text-muted);
+        }
+
+        .mega-promo {
+            background: linear-gradient(145deg, #fbf7f2 0%, #eee2d7 100%);
+            border-radius: 18px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(201, 138, 122, 0.2);
+        }
+
+        .mega-promo-badge {
+            align-self: flex-start;
+            background: var(--accent-color);
+            color: #ffffff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 10px;
+        }
+
+        .mega-promo h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+            line-height: 1.25;
+        }
+
+        .mega-promo p {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+            margin-bottom: 15px;
+        }
+
+        .mega-promo-price {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .mega-promo-link {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mega-promo-link:hover {
+            gap: 10px;
+            color: var(--accent-hover);
+        }
+
+        /* Right Side: Brand Logo & Interactive Utility Icons */
+        .header-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 18px;
+        }
+
+        .logo-main {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--text-dark);
+            white-space: nowrap;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .logo-main span {
+            color: var(--accent-color);
+            font-weight: 400;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            margin-left: 2px;
+        }
+
+        .logo-main:hover {
+            transform: translateY(-1px);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .action-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            font-size: 1rem;
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .action-btn:hover {
+            background: #ffffff;
+            color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .action-badge {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            background: var(--accent-color);
+            color: #ffffff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 4px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 6px rgba(201, 138, 122, 0.4);
+        }
+
+        .header-wrapper.scrolled .nav-pill {
+            background: rgba(255, 255, 255, 0.94);
+            box-shadow: 0 12px 35px rgba(58, 47, 40, 0.12);
+        }
+
+        /* Hero Typography */
+        .tagline-container {
+            position: absolute;
+            top: 45%;
+            left: 8%;
+            transform: translateY(-50%);
+            z-index: 10;
+            max-width: 500px;
+            animation: fadeInDown 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        .hero-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.85);
+            border-radius: var(--radius-pill);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            margin-bottom: 14px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.85rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--text-dark);
+            position: relative;
+            padding-left: 24px;
+            text-shadow: 0 2px 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .tagline .italic-text {
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: 400;
+        }
+
+        .tagline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10%;
+            height: 80%;
+            width: 4px;
+            background: linear-gradient(180deg, var(--accent-color) 0%, rgba(201, 138, 122, 0.2) 100%);
+            border-radius: 4px;
+        }
+
+        .tagline-subtext {
+            margin-top: 16px;
+            padding-left: 24px;
+            font-size: 0.96rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 1.2s ease both;
+        }
+
+        .main-title {
+            font-size: 4.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-align: center;
+            color: var(--text-dark);
+            text-shadow: 0 4px 25px rgba(255, 255, 255, 0.7);
+            user-select: none;
+        }
+
+        .main-title span {
+            color: var(--accent-color);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .hero-action-section {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 15;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .hero-btn-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .view-all-btn {
+            background: rgba(45, 38, 33, 0.92);
+            color: #ffffff;
+            border: 2px solid transparent;
+            padding: 15px 44px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-radius: var(--radius-pill);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+            box-shadow: 0 10px 25px -5px rgba(45, 38, 33, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-all-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 40%;
+            height: 200%;
+            background: linear-gradient(60deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(25deg);
+            transition: all 0.7s ease;
+        }
+
+        .view-all-btn:hover::after {
+            left: 130%;
+        }
+
+        .view-all-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 16px 35px -8px rgba(201, 138, 122, 0.5);
+        }
+
+        .view-secondary-btn {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            color: var(--text-dark);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            padding: 15px 32px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-radius: var(--radius-pill);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .view-secondary-btn:hover {
+            background: #ffffff;
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .trust-pills {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.85);
+            border-radius: var(--radius-pill);
+            padding: 8px 24px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .trust-pills span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .trust-pills i {
+            color: var(--accent-color);
+        }
+
+        .trust-divider {
+            width: 4px;
+            height: 4px;
+            background: var(--text-muted);
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+
+        /* ==========================================================================
+           3. CATEGORY QUICK SLIDER / ROUND CARDS
+           ========================================================================== */
+        .categories-section {
+            padding: 70px 0 40px;
+            background: #ffffff;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .category-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 24px 15px;
+            border-radius: var(--radius-card);
+            background: var(--bg-creme);
+            border: 1px solid #f1eae2;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .category-card:hover {
+            transform: translateY(-6px);
+            background: #ffffff;
+            border-color: var(--accent-color);
+            box-shadow: var(--shadow-card);
+        }
+
+        .cat-icon-box {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: rgba(201, 138, 122, 0.12);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 14px;
+            transition: var(--transition-smooth);
+        }
+
+        .category-card:hover .cat-icon-box {
+            background: var(--accent-color);
+            color: #ffffff;
+            transform: scale(1.08);
+        }
+
+        .cat-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .cat-count {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           4. NEW ARRIVALS & FILTERABLE PRODUCT LISTING (PRICED IN PKR)
+           ========================================================================== */
+        .products-section {
+            padding: 80px 0;
+            background: var(--bg-color);
+        }
+
+        /* Filter Tab Buttons */
+        .filter-tabs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 9px 24px;
+            border-radius: var(--radius-pill);
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(220, 210, 200, 0.5);
+            font-weight: 600;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--text-dark);
+            color: #ffffff;
+            border-color: var(--text-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(45, 38, 33, 0.15);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid #f0ebe4;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(201, 138, 122, 0.3);
+        }
+
+        .product-img-box {
+            position: relative;
+            height: 270px;
+            background: linear-gradient(135deg, #f7f3ee 0%, #ebe2d7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img-box i.mock-icon {
+            font-size: 4.2rem;
+            color: var(--accent-color);
+            opacity: 0.85;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .product-img-box i.mock-icon {
+            transform: scale(1.12);
+        }
+
+        .badge-list {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 2;
+        }
+
+        .product-badge {
+            background: #ffffff;
+            color: var(--text-dark);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 11px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+            letter-spacing: 0.3px;
+        }
+
+        .product-badge.sale {
+            background: #e05d52;
+            color: #ffffff;
+        }
+
+        .product-badge.organic {
+            background: #48bb78;
+            color: #ffffff;
+        }
+
+        .wishlist-toggle {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: var(--transition-smooth);
+            z-index: 2;
+        }
+
+        .wishlist-toggle.active,
+        .wishlist-toggle:hover {
+            color: #e05d52;
+            background: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .quick-view-overlay-btn {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            color: var(--text-dark);
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 8px 18px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .product-card:hover .quick-view-overlay-btn {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.76rem;
+            color: #e59819;
+            margin-bottom: 6px;
+        }
+
+        .product-rating span {
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            margin-left: 2px;
+        }
+
+        .product-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+            line-height: 1.35;
+        }
+
+        .product-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .product-bottom-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 10px;
+            border-top: 1px solid #f6f0ea;
+        }
+
+        .price-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-current {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .price-original {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+
+        .add-cart-btn {
+            background: var(--bg-color);
+            color: var(--text-dark);
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+            font-size: 0.82rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition-smooth);
+        }
+
+        .add-cart-btn:hover {
+            background: var(--accent-color);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(201, 138, 122, 0.4);
+        }
+
+        /* ==========================================================================
+           5. HOSPITAL STARTER BOX SPOTLIGHT (EDITORIAL BANNER)
+           ========================================================================== */
+        .spotlight-section {
+            padding: 70px 0;
+            background: #ffffff;
+        }
+
+        .spotlight-card {
+            background: linear-gradient(135deg, #fbf7f2 0%, #eee2d7 100%);
+            border-radius: 28px;
+            padding: 55px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+            border: 1px solid rgba(201, 138, 122, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .spotlight-card::after {
+            content: '';
+            position: absolute;
+            right: -80px;
+            bottom: -80px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(201, 138, 122, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .spotlight-content {
+            z-index: 2;
+        }
+
+        .spotlight-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 6px 16px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 16px;
+        }
+
+        .spotlight-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.25;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .spotlight-text {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.65;
+            margin-bottom: 24px;
+        }
+
+        .spotlight-includes {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .spotlight-includes li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .spotlight-includes li i {
+            color: var(--accent-color);
+        }
+
+        .spotlight-price-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .spotlight-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .spotlight-price del {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin-left: 6px;
+        }
+
+        .spotlight-image-side {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 22px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 30px;
+        }
+
+        .spotlight-image-side i.large-icon {
+            font-size: 6.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* ==========================================================================
+           6. VALUE PROPOSITIONS / WHY PARENTS CHOOSE US
+           ========================================================================== */
+        .features-section {
+            padding: 80px 0;
+            background: var(--bg-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: var(--radius-card);
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid #f0ebe4;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+            border-color: var(--accent-color);
+        }
+
+        .feature-icon-circle {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: rgba(201, 138, 122, 0.12);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin: 0 auto 18px;
+            transition: var(--transition-smooth);
+        }
+
+        .feature-card:hover .feature-icon-circle {
+            background: var(--accent-color);
+            color: #ffffff;
+            transform: rotate(6deg) scale(1.08);
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* ==========================================================================
+           7. CUSTOMER REVIEWS (PAKISTANI MOTHERS TESTIMONIALS)
+           ========================================================================== */
+        .reviews-section {
+            padding: 85px 0;
+            background: #ffffff;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .review-card {
+            background: var(--bg-creme);
+            border-radius: var(--radius-card);
+            padding: 35px 28px;
+            border: 1px solid #f2ebe3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .review-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+            background: #ffffff;
+            border-color: rgba(201, 138, 122, 0.4);
+        }
+
+        .review-stars {
+            color: #e59819;
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+        }
+
+        .review-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: auto;
+            border-top: 1px solid #ece4dc;
+            padding-top: 16px;
+        }
+
+        .author-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: rgba(201, 138, 122, 0.2);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .author-details h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .author-details p {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .author-details .verified-badge {
+            color: #38a169;
+            font-size: 0.72rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ==========================================================================
+           8. INSTAGRAM & NEWSLETTER SIGNUP
+           ========================================================================== */
+        .newsletter-section {
+            padding: 70px 0;
+            background: linear-gradient(135deg, #322a25 0%, #443831 100%);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .newsletter-box {
+            text-align: center;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .newsletter-box h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-box p {
+            color: #cfc5bd;
+            font-size: 0.95rem;
+            margin-bottom: 26px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 14px 22px;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            outline: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .newsletter-input::placeholder {
+            color: #b5aba3;
+        }
+
+        .newsletter-btn {
+            background: var(--accent-color);
+            color: #ffffff;
+            padding: 14px 30px;
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+
+        .newsletter-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           9. BOUTIQUE FOOTER & SOCIALS
+           ========================================================================== */
+        .site-footer {
+            background: #251f1b;
+            color: #d1c7bf;
+            padding: 70px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+            display: inline-block;
+        }
+
+        .footer-brand .footer-logo span {
+            color: var(--accent-color);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .footer-brand p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #a89f97;
+            margin-bottom: 20px;
+        }
+
+        .footer-heading {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.88rem;
+            color: #b0a79f;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            padding-left: 4px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.88rem;
+            margin-bottom: 12px;
+            color: #b0a79f;
+        }
+
+        .footer-contact-item i {
+            color: var(--accent-color);
+            margin-top: 4px;
+        }
+
+        .whatsapp-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25d366;
+            color: #ffffff;
+            padding: 9px 18px;
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-top: 8px;
+            transition: var(--transition-smooth);
+        }
+
+        .whatsapp-link-btn:hover {
+            background: #20ba59;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.82rem;
+            color: #8c827a;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .payment-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3rem;
+        }
+
+        /* Floating WhatsApp Button for Pakistan Customers */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25d366;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 150;
+            transition: var(--transition-smooth);
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        /* ==========================================================================
+           10. INTERACTIVE MODALS & DRAWERS
+           ========================================================================== */
+
+        /* Size Guide Modal */
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 38, 33, 0.55);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            z-index: 350;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
+
+        .modal-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 28px;
+            padding: 35px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+            transform: translateY(20px) scale(0.96);
+            transition: var(--transition-smooth);
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-backdrop.active .modal-box {
+            transform: translateY(0) scale(1);
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            transition: var(--transition-smooth);
+        }
+
+        .modal-close-btn:hover {
+            background: var(--accent-color);
+            color: #ffffff;
+            transform: rotate(90deg);
+        }
+
+        /* Size Guide Table */
+        .size-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.88rem;
+        }
+
+        .size-table th, .size-table td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid #eee8e0;
+        }
+
+        .size-table th {
+            background: var(--bg-creme);
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .size-table tr:hover {
+            background: var(--accent-soft);
+        }
+
+        /* Quick View Modal */
+        .quick-view-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .quick-view-img {
+            background: var(--bg-creme);
+            border-radius: 18px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--accent-color);
+        }
+
+        .size-selector {
+            display: flex;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .size-pill-btn {
+            padding: 6px 14px;
+            border: 1px solid #d5cbc2;
+            border-radius: var(--radius-pill);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .size-pill-btn.active, .size-pill-btn:hover {
+            background: var(--text-dark);
+            color: #ffffff;
+            border-color: var(--text-dark);
+        }
+
+        /* Search Modal Overlay */
+        .search-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 38, 33, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            z-index: 300;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 90px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
+
+        .search-modal.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .search-container {
+            background: #ffffff;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 28px;
+            padding: 35px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+            transform: translateY(-20px) scale(0.97);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .search-modal.active .search-container {
+            transform: translateY(0) scale(1);
+        }
+
+        .search-input-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .search-input-box i {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-right: 14px;
+        }
+
+        .search-input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 1.35rem;
+            font-family: inherit;
+            color: var(--text-dark);
+            background: transparent;
+        }
+
+        .search-tags {
+            margin-top: 25px;
+        }
+
+        .search-tags-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-pill {
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+            background: var(--bg-color);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .tag-pill:hover {
+            background: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .search-results-preview {
+            margin-top: 25px;
+            max-height: 260px;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .search-results-preview.show {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border-radius: 12px;
+            background: var(--bg-color);
+            transition: var(--transition-smooth);
+        }
+
+        .search-result-item:hover {
+            background: var(--accent-soft);
+        }
+
+        /* Slide-In Mini Cart Drawer (PKR) */
+        .cart-drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 38, 33, 0.45);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 400;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
+
+        .cart-drawer-overlay.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .cart-drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 440px;
+            height: 100%;
+            background: #ffffff;
+            z-index: 410;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -15px 0 40px rgba(0, 0, 0, 0.15);
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .cart-drawer.active {
+            transform: translateX(0);
+        }
+
+        .cart-header {
+            padding: 24px;
+            border-bottom: 1px solid #f0ebe4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-title span {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            background: var(--accent-soft);
+            padding: 2px 10px;
+            border-radius: var(--radius-pill);
+        }
+
+        .shipping-meter {
+            background: #fbf7f2;
+            padding: 14px 24px;
+            border-bottom: 1px solid #f0ebe4;
+        }
+
+        .shipping-text {
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 6px;
+            background: #eaddd3;
+            border-radius: var(--radius-pill);
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), #48bb78);
+            border-radius: var(--radius-pill);
+            transition: width 0.4s ease;
+        }
+
+        .cart-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 15px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f3eee8;
+        }
+
+        .cart-item-thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 14px;
+            background: #f5ede6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+
+        .cart-item-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cart-item-title {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--text-dark);
+        }
+
+        .cart-item-meta {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .cart-item-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .qty-controls {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e0d6cd;
+            border-radius: var(--radius-pill);
+            overflow: hidden;
+        }
+
+        .qty-btn {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            color: var(--text-dark);
+        }
+
+        .qty-btn:hover {
+            background: #ede3da;
+        }
+
+        .qty-val {
+            font-size: 0.82rem;
+            font-weight: 600;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .item-price {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .remove-item-btn {
+            color: var(--text-light);
+            font-size: 0.8rem;
+            padding: 4px;
+        }
+
+        .remove-item-btn:hover {
+            color: #d9534f;
+        }
+
+        .cart-footer {
+            padding: 24px;
+            border-top: 1px solid #f0ebe4;
+            background: #faf6f0;
+        }
+
+        .cart-subtotal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .cod-notice-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.76rem;
+            color: #2b6cb0;
+            background: #ebf8ff;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background: var(--text-dark);
+            color: #ffffff;
+            padding: 15px;
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: var(--transition-smooth);
+            box-shadow: 0 8px 20px rgba(45, 38, 33, 0.2);
+        }
+
+        .checkout-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Slide-Over Drawer */
+        .mobile-drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 38, 33, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 450;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
+
+        .mobile-drawer-overlay.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 84%;
+            max-width: 350px;
+            height: 100%;
+            background: #ffffff;
+            z-index: 460;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 15px 0 40px rgba(0, 0, 0, 0.15);
+            transform: translateX(-100%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            padding: 30px 24px;
+            overflow-y: auto;
+        }
+
+        .mobile-drawer.active {
+            transform: translateX(0);
+        }
+
+        .mobile-drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .mobile-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .mobile-logo span {
+            color: var(--accent-color);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .mobile-nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mobile-nav-link {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #f3eee8;
+        }
+
+        .mobile-nav-link:hover, .mobile-nav-link.active {
+            color: var(--accent-color);
+        }
+
+        .mobile-accordion {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+            background: #faf6f1;
+            border-radius: 14px;
+            padding: 0 16px;
+        }
+
+        .mobile-accordion.open {
+            max-height: 350px;
+            padding: 12px 16px;
+            margin: 8px 0;
+        }
+
+        .mobile-sub-link {
+            display: block;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .mobile-sub-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Toast Popup */
+        .toast-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffffff;
+            color: var(--text-dark);
+            padding: 14px 22px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            border-left: 4px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            z-index: 600;
+            transform: translateY(100px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .toast-notification.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ==========================================================================
+           11. FULL RESPONSIVE MEDIA QUERIES (MOBILE, TABLET, DESKTOP)
+           ========================================================================== */
+        @media (max-width: 1200px) {
+            .product-grid { grid-template-columns: repeat(3, 1fr); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-link { padding: 9px 15px; font-size: 0.9rem; }
+            .logo-main { font-size: 1.85rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 900px) {
+            .background-container {
+                /* Swap to Mobile Hero Image */
+                background-image: 
+                    linear-gradient(180deg, 
+                        rgba(247, 243, 238, 0.45) 0%, 
+                        rgba(247, 243, 238, 0.1) 40%, 
+                        rgba(247, 243, 238, 0.8) 100%),
+                    url('Baby2.jpg');
+                padding: 0 20px 30px;
+            }
+
+            .menu-toggle { display: flex; }
+            .header-center { display: none; }
+            .currency-badge { display: none; }
+            .header { display: flex; justify-content: space-between; }
+            
+            .product-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+            .spotlight-card { grid-template-columns: 1fr; padding: 35px 25px; }
+            .spotlight-image-side { height: 260px; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: 1fr; }
+            
+            .tagline-container {
+                top: 40%;
+                left: 20px;
+                right: 20px;
+                max-width: 100%;
+            }
+
+            .tagline { font-size: 2.1rem; }
+            .main-title { font-size: 3.2rem; }
+            .trust-pills { display: none; }
+            .section-title { font-size: 2rem; }
+        }
+
+        @media (max-width: 580px) {
+            .announcement-bar { font-size: 0.72rem; padding: 6px 30px 6px 12px; }
+            .announcement-dot, .announcement-hide-mobile { display: none; }
+            .logo-main { font-size: 1.5rem; }
+            .action-btn { width: 38px; height: 38px; font-size: 0.9rem; }
+            
+            .tagline { font-size: 1.7rem; }
+            .main-title { font-size: 2.4rem; }
+            .view-all-btn, .view-secondary-btn { padding: 12px 26px; font-size: 0.82rem; width: 100%; justify-content: center; }
+            
+            .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .product-img-box { height: 180px; }
+            .product-img-box i.mock-icon { font-size: 3rem; }
+            .product-info { padding: 12px; }
+            .product-title { font-size: 0.88rem; }
+            .price-current { font-size: 1rem; }
+            .add-cart-btn { padding: 6px 10px; font-size: 0.75rem; }
+
+            .newsletter-form { flex-direction: column; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .floating-whatsapp { bottom: 20px; left: 20px; width: 48px; height: 48px; font-size: 1.4rem; }
+            .quick-view-grid { grid-template-columns: 1fr; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP ANNOUNCEMENT BAR (PKR Delivery & COD Offers) -->
+    <aside class="announcement-bar" id="announcement-bar" aria-label="Store Announcement">
+        <div class="announcement-inner">
+            <span>✨ <strong>Free Delivery across Pakistan</strong> on orders over Rs. 4,999</span>
+            <span class="announcement-dot">•</span>
+            <span class="announcement-hide-mobile">Cash on Delivery (COD) Nationwide</span>
+            <span class="announcement-dot">•</span>
+            <span>Use code <strong>BABY10</strong> for 10% OFF</span>
+        </div>
+        <button class="announcement-close" id="announcement-close-btn" aria-label="Dismiss banner">
+            <i class="fas fa-times"></i>
+        </button>
+    </aside>
+
+    <!-- 2. HERO SECTION & DYNAMIC NAVBAR -->
+    <div class="background-container" id="home">
+        
+        <!-- STICKY FLOATING HEADER WRAPPER -->
+        <div class="header-wrapper" id="header-wrapper">
+            <header class="header">
+                
+                <!-- Left: Mobile Menu Toggle & Pakistan Currency Badge -->
+                <div class="header-left">
+                    <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open mobile navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <div class="currency-badge">
+                        <span class="flag-icon">🇵🇰</span>
+                        <span>Pakistan | PKR (Rs.)</span>
+                    </div>
+                </div>
+
+                <!-- Center: Glass Pill Navbar with Dynamic Sliding Indicator -->
+                <div class="header-center">
+                    <nav class="nav-pill" id="desktop-nav" aria-label="Primary navigation">
+                        <div class="nav-indicator" id="nav-indicator"></div>
+
+                        <ul id="nav-pill-list">
+                            <li class="nav-item active">
+                                <a href="#home" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item has-dropdown">
+                                <a href="#products" class="nav-link">
+                                    Newborn (0-12M) <i class="fas fa-chevron-down chevron"></i>
+                                </a>
+                                
+                                <!-- Mega Dropdown Menu -->
+                                <div class="mega-dropdown">
+                                    <div class="mega-grid">
+                                        <div class="mega-categories">
+                                            <span class="mega-heading">Newborn Essentials</span>
+                                            <a href="#products" class="mega-item" data-filter="sleepsuits">
+                                                <div class="mega-icon"><i class="fas fa-baby"></i></div>
+                                                <div class="mega-info">
+                                                    <span class="mega-title">Sleepsuits & Footies</span>
+                                                    <span class="mega-sub">Two-way safety zip • 0-12M</span>
+                                                </div>
+                                            </a>
+                                            <a href="#products" class="mega-item" data-filter="rompers">
+                                                <div class="mega-icon"><i class="fas fa-shirt"></i></div>
+                                                <div class="mega-info">
+                                                    <span class="mega-title">Organic Rompers & Bodysuits</span>
+                                                    <span class="mega-sub">Ribbed pure cotton & bamboo</span>
+                                                </div>
+                                            </a>
+                                            <a href="#products" class="mega-item" data-filter="sets">
+                                                <div class="mega-icon"><i class="fas fa-suitcase-medical"></i></div>
+                                                <div class="mega-info">
+                                                    <span class="mega-title">Hospital Starter Bags</span>
+                                                    <span class="mega-sub">Complete sets for first days</span>
+                                                </div>
+                                            </a>
+                                            <a href="#products" class="mega-item" data-filter="accessories">
+                                                <div class="mega-icon"><i class="fas fa-bed"></i></div>
+                                                <div class="mega-info">
+                                                    <span class="mega-title">Swaddles, Mittens & Booties</span>
+                                                    <span class="mega-sub">Zero-scratch soft cotton</span>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- Featured Dropdown Promo -->
+                                        <div class="mega-promo">
+                                            <span class="mega-promo-badge">Best Value</span>
+                                            <h4>Hospital Bag Welcome Bundle</h4>
+                                            <p>7-piece organic starter box lovingly packed for delivery day.</p>
+                                            <div class="mega-promo-price">Rs. 5,950</div>
+                                            <a href="#spotlight" class="mega-promo-link">
+                                                View Bundle <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#features" class="nav-link">Why Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" id="size-guide-nav-btn">Size Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#reviews" class="nav-link">Moms Love</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Right: Logo & Interactive E-Commerce Utility Icons -->
+                <div class="header-right">
+                    <a href="#home" class="logo-main">Seventh<span>grace</span></a>
+                    
+                    <div class="header-actions">
+                        <button class="action-btn" id="search-open-btn" aria-label="Open search dialog" title="Search baby clothes">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <button class="action-btn" id="wishlist-btn" aria-label="Wishlist" title="Saved items">
+                            <i class="far fa-heart"></i>
+                            <span class="action-badge" id="wishlist-badge">3</span>
+                        </button>
+                        
+                        <button class="action-btn" id="cart-open-btn" aria-label="Shopping bag" title="Shopping Bag">
+                            <i class="fas fa-bag-shopping"></i>
+                            <span class="action-badge" id="cart-badge">2</span>
+                        </button>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+
+        <!-- ELEGANT FLOATING HERO TAGLINE -->
+        <div class="tagline-container">
+            <div class="hero-chip">
+                <i class="fas fa-feather-pointed"></i>
+                <span>100% Certified Organic Cotton</span>
+            </div>
+            <h2 class="tagline">Premium Comfort <br> <span class="italic-text">for little ones</span></h2>
+            <p class="tagline-subtext">Delicately crafted for sensitive newborn skin. Hypoallergenic, tagless, and buttery soft baby clothes delivered nationwide across Pakistan.</p>
+        </div>
+
+        <!-- MAIN CENTER TITLE -->
+        <main class="main-content">
+            <h1 class="main-title">Seventh<span>grace</span></h1>
+        </main>
+        
+        <!-- FIXED ACTION SECTION & BADGES -->
+        <div class="hero-action-section">
+            <div class="hero-btn-group">
+                <a href="#new-arrivals" class="view-all-btn">
+                    <span>Explore New Arrivals</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#spotlight" class="view-secondary-btn">
+                    <i class="fas fa-gift"></i>
+                    <span>Hospital Gift Set</span>
+                </a>
+            </div>
+
+            <div class="trust-pills">
+                <span><i class="fas fa-shield-heart"></i> Safe Flat Seams</span>
+                <span class="trust-divider"></span>
+                <span><i class="fas fa-truck-fast"></i> Cash on Delivery in Pakistan</span>
+                <span class="trust-divider"></span>
+                <span><i class="fas fa-rotate-left"></i> 7-Day Easy Exchange</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 3. CATEGORIES QUICK BROWSING SECTION -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Carefully Curated</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-desc">Everything your newborn needs from their first precious hospital moments through their early giggles and steps.</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Cat 1 -->
+                <a href="#products" class="category-card" data-filter="sleepsuits">
+                    <div class="cat-icon-box"><i class="fas fa-baby"></i></div>
+                    <span class="cat-name">Sleepsuits & Footies</span>
+                    <span class="cat-count">16 Styles • Rs. 2,250+</span>
+                </a>
+                <!-- Cat 2 -->
+                <a href="#products" class="category-card" data-filter="rompers">
+                    <div class="cat-icon-box"><i class="fas fa-shirt"></i></div>
+                    <span class="cat-name">Organic Rompers</span>
+                    <span class="cat-count">24 Styles • Rs. 1,950+</span>
+                </a>
+                <!-- Cat 3 -->
+                <a href="#products" class="category-card" data-filter="sets">
+                    <div class="cat-icon-box"><i class="fas fa-suitcase-medical"></i></div>
+                    <span class="cat-name">Hospital Starter Kits</span>
+                    <span class="cat-count">8 Bundles • Rs. 4,500+</span>
+                </a>
+                <!-- Cat 4 -->
+                <a href="#products" class="category-card" data-filter="accessories">
+                    <div class="cat-icon-box"><i class="fas fa-bed"></i></div>
+                    <span class="cat-name">Swaddles & Blankets</span>
+                    <span class="cat-count">14 Styles • Rs. 2,450+</span>
+                </a>
+                <!-- Cat 5 -->
+                <a href="#products" class="category-card" data-filter="accessories">
+                    <div class="cat-icon-box"><i class="fas fa-mitten"></i></div>
+                    <span class="cat-name">Caps, Mittens & Socks</span>
+                    <span class="cat-count">12 Packs • Rs. 1,250+</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. NEW ARRIVALS & COMPLETE PRODUCT LISTING (PRICED IN PKR) -->
+    <section class="products-section" id="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Freshly Unpacked</span>
+                <h2 class="section-title">Newborn Arrivals in Pakistan</h2>
+                <p class="section-desc">Made from chemical-free, breathable cotton fabrics suited for Pakistan's weather. Designed with two-way zips for effortless midnight diaper changes.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="sleepsuits">Zip Sleepsuits</button>
+                <button class="filter-btn" data-filter="rompers">Organic Rompers</button>
+                <button class="filter-btn" data-filter="sets">Sets & Bundles</button>
+                <button class="filter-btn" data-filter="accessories">Swaddles & Mittens</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card" data-category="sleepsuits">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge sale">-18%</span>
+                            <span class="product-badge organic">100% Organic</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-baby mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="1"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(48)</span>
+                        </div>
+                        <h3 class="product-title">CloudSoft™ Two-Way Zip Sleepsuit</h3>
+                        <p class="product-subtitle">Oatmeal Heather • Foldover scratch mittens</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 2,450</span>
+                                <span class="price-original">Rs. 2,950</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="1" data-title="CloudSoft™ Two-Way Zip Sleepsuit" data-price="2450">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="rompers">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge">Bestseller</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-shirt mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="2"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(36)</span>
+                        </div>
+                        <h3 class="product-title">Ribbed Bamboo Organic Romper</h3>
+                        <p class="product-subtitle">Warm Terracotta • Wooden buttons</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 2,250</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="2" data-title="Ribbed Bamboo Organic Romper" data-price="2250">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="sets">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge sale">Popular</span>
+                            <span class="product-badge organic">Pure Cotton</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-suitcase-medical mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="3"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                            <span>(62)</span>
+                        </div>
+                        <h3 class="product-title">7-Piece Hospital Welcome Kit</h3>
+                        <p class="product-subtitle">Desert Almond • Complete birth wardrobe</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 5,950</span>
+                                <span class="price-original">Rs. 6,800</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="3" data-title="7-Piece Hospital Welcome Kit" data-price="5950">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-category="accessories">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge">New Arrival</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-bed mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="4"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(29)</span>
+                        </div>
+                        <h3 class="product-title">Organic Muslin Swaddle Blanket Duo</h3>
+                        <p class="product-subtitle">Pack of 2 • Extra-large 120x120cm</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 2,850</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="4" data-title="Organic Muslin Swaddle Blanket Duo" data-price="2850">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card" data-category="rompers">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge organic">Pure Cotton</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-vest mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="5"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(21)</span>
+                        </div>
+                        <h3 class="product-title">Heirloom Kimono Wrap Onesie Set</h3>
+                        <p class="product-subtitle">Natural Cream • Snap buttons, no pull-over</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 3,450</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="5" data-title="Heirloom Kimono Wrap Onesie Set" data-price="3450">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card" data-category="sleepsuits">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge sale">-15%</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-socks mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="6"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(41)</span>
+                        </div>
+                        <h3 class="product-title">Buttery Soft Waffle Footie</h3>
+                        <p class="product-subtitle">Dusty Sage • Breathable all-season cotton</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 2,550</span>
+                                <span class="price-original">Rs. 3,000</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="6" data-title="Buttery Soft Waffle Footie" data-price="2550">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="product-card" data-category="accessories">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge">Value Pack</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-mitten mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="7"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(54)</span>
+                        </div>
+                        <h3 class="product-title">Newborn Scratch Mittens & Cap Set</h3>
+                        <p class="product-subtitle">Set of 3 Matching Pairs • Stay-on gentle fit</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 1,450</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="7" data-title="Newborn Scratch Mittens & Cap Set" data-price="1450">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card" data-category="sets">
+                    <div class="product-img-box">
+                        <div class="badge-list">
+                            <span class="product-badge organic">Handcrafted</span>
+                        </div>
+                        <button class="wishlist-toggle" aria-label="Save to wishlist"><i class="far fa-heart"></i></button>
+                        <i class="fas fa-gift mock-icon"></i>
+                        <button class="quick-view-overlay-btn" data-id="8"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(19)</span>
+                        </div>
+                        <h3 class="product-title">Bespoke Knit Cardigan & Bonnet Set</h3>
+                        <p class="product-subtitle">Oat Warm Blend • Perfect for hospital exit</p>
+                        <div class="product-bottom-row">
+                            <div class="price-group">
+                                <span class="price-current">Rs. 3,850</span>
+                            </div>
+                            <button class="add-cart-btn" data-id="8" data-title="Bespoke Knit Cardigan & Bonnet Set" data-price="3850">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. HOSPITAL STARTER BOX SPOTLIGHT (EDITORIAL BANNER) -->
+    <section class="spotlight-section" id="spotlight">
+        <div class="container">
+            <div class="spotlight-card">
+                <div class="spotlight-content">
+                    <span class="spotlight-badge">Hospital Bag Must-Have</span>
+                    <h2 class="spotlight-title">The First 48 Hours: Complete Newborn Welcome Bundle</h2>
+                    <p class="spotlight-text">
+                        Designed with obstetricians and paediatricians. Packed with every essential garment needed for your baby’s birth day at the hospital, crafted in breathable non-toxic GOTS certified organic cotton.
+                    </p>
+                    
+                    <ul class="spotlight-includes">
+                        <li><i class="fas fa-check-circle"></i> 2x Two-Way Zip Sleepsuits</li>
+                        <li><i class="fas fa-check-circle"></i> 1x Kimono Cross-Over Onesie</li>
+                        <li><i class="fas fa-check-circle"></i> 1x Extra-Large Muslin Swaddle</li>
+                        <li><i class="fas fa-check-circle"></i> 1x Knot Cap & Scratch Mittens</li>
+                        <li><i class="fas fa-check-circle"></i> 1x Heirloom Keepsake Gift Box</li>
+                        <li><i class="fas fa-check-circle"></i> Free Nationwide COD Delivery</li>
+                    </ul>
+
+                    <div class="spotlight-price-row">
+                        <div class="spotlight-price">
+                            Rs. 5,950 <del>Rs. 6,800</del>
+                        </div>
+                        <button class="view-all-btn add-cart-btn" data-id="3" data-title="7-Piece Hospital Welcome Kit" data-price="5950">
+                            <span>Add Bundle to Bag</span>
+                            <i class="fas fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="spotlight-image-side">
+                    <i class="fas fa-gift large-icon"></i>
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 6px; color: var(--text-dark);">
+                        Ready-to-Gift Luxury Box
+                    </h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); max-width: 320px;">
+                        Hand-packed with tissue wrap, satin ribbon & complimentary personalized handwritten card.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. VALUE PROPOSITIONS (WHY PARENTS IN PAKISTAN CHOOSE US) -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Seventh Grace Promise</span>
+                <h2 class="section-title">Designed Tenderly for Newborns</h2>
+                <p class="section-desc">Because newborn skin is 3x thinner and more delicate than adult skin.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-leaf"></i></div>
+                    <h3 class="feature-title">100% GOTS Organic</h3>
+                    <p class="feature-desc">Zero chemical pesticides, no toxic bleaches, and strictly non-carcinogenic water dyes.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-feather"></i></div>
+                    <h3 class="feature-title">Tagless & Flat Seams</h3>
+                    <p class="feature-desc">No abrasive scratchy tags inside. Flatlock seams prevent friction and diaper rash.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-bolt"></i></div>
+                    <h3 class="feature-title">2-Way Easy Zippers</h3>
+                    <p class="feature-desc">Diaper change in 30 seconds without fully undressing baby or exposing their chest to drafts.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-truck-ramp-box"></i></div>
+                    <h3 class="feature-title">Cash on Delivery (COD)</h3>
+                    <p class="feature-desc">Delivering across Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, Quetta, and nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. REVIEWS (PAKISTANI MOTHERS TESTIMONIALS) -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Real Mom Stories</span>
+                <h2 class="section-title">Loved by 15,000+ Families in Pakistan</h2>
+                <p class="section-desc">Read how Seventh Grace brings peaceful sleep and gentle comfort to babies across the country.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "The softness of this organic fabric is on another level! My 2-week-old baby was breaking out in heat bumps with normal market clothes. After switching to Seventh Grace sleepsuits, his skin cleared up completely. Fast COD to Lahore!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-details">
+                            <h4>Ayesha Bilal</h4>
+                            <p>Gulberg, Lahore • <span class="verified-badge"><i class="fas fa-circle-check"></i> Verified Buyer</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "Ordered the 7-Piece Hospital Welcome Kit for my delivery bag at South City Hospital Karachi. The nurses and family couldn't stop praising how buttery soft it felt. The two-way zip made night feedings and diaper changes so stress-free."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">F</div>
+                        <div class="author-details">
+                            <h4>Fatima Zahra</h4>
+                            <p>DHA, Karachi • <span class="verified-badge"><i class="fas fa-circle-check"></i> Verified Buyer</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-quote">
+                        "As a paediatrician and new mum in Islamabad, I am very picky about baby materials. Seventh Grace is genuine 100% GOTS organic cotton. Washed 10+ times and it still retains its heavenly shape and softness. Highly recommended!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-details">
+                            <h4>Dr. Maryam Khan</h4>
+                            <p>F-7, Islamabad • <span class="verified-badge"><i class="fas fa-circle-check"></i> Verified Buyer</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. NEWSLETTER / VIP CLUB -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Join the Seventh Grace Family</h2>
+                <p>Subscribe for early access to newborn collections, baby care tips, and get <strong>Rs. 500 OFF</strong> your first order.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you! Use code GRACE500 for Rs. 500 off.'); this.reset();">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+                    <button type="submit" class="newsletter-btn">Claim Rs. 500</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. BOUTIQUE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Col 1 -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Seventh<span>grace</span></a>
+                    <p>
+                        Pakistan’s premier organic newborn baby clothing boutique. Crafted tenderly from certified non-toxic organic cotton fibers for delicate little ones.
+                    </p>
+                    <p style="font-size: 0.8rem; color: #9f948d;">
+                        Head Office: Lahore, Pakistan • Delivering Nationwide via TCS, Leopards & Trax COD.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="#new-arrivals">Zip Sleepsuits (0-12M)</a></li>
+                        <li><a href="#new-arrivals">Organic Rompers</a></li>
+                        <li><a href="#spotlight">Hospital Welcome Kits</a></li>
+                        <li><a href="#new-arrivals">Muslin Swaddles</a></li>
+                        <li><a href="#new-arrivals">Mittens & Caps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Customer Care</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)" id="size-guide-footer-btn">Baby Size Guide</a></li>
+                        <li><a href="#features">Cash on Delivery (COD)</a></li>
+                        <li><a href="#reviews">Mom Reviews</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Orders delivered in 2-4 business days across Pakistan.');">Shipping & Delivery Times</a></li>
+                        <li><a href="javascript:void(0)" onclick="showToast('Easy 7-day hassle-free exchange on all baby clothing.');">7-Day Exchange Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Need Help?</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 300 1234567 (10 AM - 8 PM PKT)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>care@seventhgrace.pk</span>
+                    </div>
+                    
+                    <a href="https://wa.me/923001234567?text=Hello%20Seventh%20Grace,%20I%20need%20help%20with%20newborn%20clothes" target="_blank" class="whatsapp-link-btn">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Row -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Seventh Grace Baby Pakistan. All rights reserved. Handcrafted with love.</p>
+                <div class="payment-icons">
+                    <span style="font-size: 0.82rem; margin-right: 8px;">We Accept:</span>
+                    <i class="fas fa-money-bill-wave" title="Cash on Delivery (COD)"></i>
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <span style="font-size: 0.75rem; font-weight: 700; background: #3a322c; padding: 2px 8px; border-radius: 4px;">JazzCash</span>
+                    <span style="font-size: 0.75rem; font-weight: 700; background: #3a322c; padding: 2px 8px; border-radius: 4px;">EasyPaisa</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 10. FLOATING WHATSAPP BUTTON (PAKISTAN CUSTOMER FAVOURITE) -->
+    <a href="https://wa.me/923001234567?text=Hello%20Seventh%20Grace,%20I%20have%20a%20question%20about%20baby%20sizes" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- 11. BABY SIZE GUIDE MODAL -->
+    <div class="modal-backdrop" id="size-guide-modal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="size-guide-close-btn" aria-label="Close size guide">&times;</button>
+            <span class="section-tag" style="margin-bottom: 8px;">Fit Guide</span>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 10px; color: var(--text-dark);">
+                Newborn Baby Sizing Chart
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Babies grow fast! If your baby is between two sizes or has healthy chunky thighs, we recommend sizing up for comfortable wear.
+            </p>
+
+            <table class="size-table">
+                <thead>
+                    <tr>
+                        <th>Size Label</th>
+                        <th>Baby Age</th>
+                        <th>Weight (kg)</th>
+                        <th>Length (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Newborn (NB)</strong></td>
+                        <td>0 – 1 Month</td>
+                        <td>2.3 – 3.6 kg</td>
+                        <td>Up to 52 cm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>0 – 3 Months</strong></td>
+                        <td>0 – 3 Months</td>
+                        <td>3.6 – 5.7 kg</td>
+                        <td>52 – 62 cm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 – 6 Months</strong></td>
+                        <td>3 – 6 Months</td>
+                        <td>5.7 – 7.5 kg</td>
+                        <td>62 – 68 cm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6 – 9 Months</strong></td>
+                        <td>6 – 9 Months</td>
+                        <td>7.5 – 9.2 kg</td>
+                        <td>68 – 74 cm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9 – 12 Months</strong></td>
+                        <td>9 – 12 Months</td>
+                        <td>9.2 – 11.0 kg</td>
+                        <td>74 – 80 cm</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top: 20px; padding: 14px; background: var(--bg-creme); border-radius: 12px; font-size: 0.82rem; color: var(--text-muted);">
+                <i class="fas fa-info-circle" style="color: var(--accent-color);"></i> <strong>Need sizing help?</strong> Message our pediatric sizing specialists directly on WhatsApp at <strong>+92 300 1234567</strong>.
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. QUICK VIEW PRODUCT MODAL -->
+    <div class="modal-backdrop" id="quick-view-modal">
+        <div class="modal-box" style="max-width: 680px;">
+            <button class="modal-close-btn" id="quick-view-close-btn">&times;</button>
+            <div class="quick-view-grid">
+                <div class="quick-view-img">
+                    <i class="fas fa-baby" id="qv-icon"></i>
+                </div>
+                <div>
+                    <span class="product-badge organic" style="display: inline-block; margin-bottom: 8px;">100% GOTS Organic</span>
+                    <h3 id="qv-title" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--text-dark); margin-bottom: 6px;">
+                        Baby Product Name
+                    </h3>
+                    <div id="qv-price" style="font-size: 1.35rem; font-weight: 700; color: var(--text-dark); margin-bottom: 12px;">
+                        Rs. 2,450
+                    </div>
+                    <p id="qv-desc" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 14px;">
+                        Buttery soft ribbed organic cotton with double safety zips and anti-scratch foldover mittens.
+                    </p>
+
+                    <label style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted);">
+                        Select Baby Size:
+                    </label>
+                    <div class="size-selector">
+                        <button class="size-pill-btn active">0-3M</button>
+                        <button class="size-pill-btn">3-6M</button>
+                        <button class="size-pill-btn">6-12M</button>
+                    </div>
+
+                    <button class="view-all-btn" id="qv-add-btn" style="width: 100%; justify-content: center; padding: 13px; font-size: 0.88rem;">
+                        <i class="fas fa-bag-shopping"></i>
+                        <span>Add to Shopping Bag</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 13. SEARCH MODAL OVERLAY -->
+    <div class="search-modal" id="search-modal">
+        <div class="search-container">
+            <button class="modal-close-btn" id="search-close-btn" aria-label="Close search">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-input-box">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" id="search-input" placeholder="Search sleepsuits, rompers, hospital sets..." autocomplete="off">
+            </div>
+            
+            <div class="search-tags">
+                <span class="search-tags-label">Popular Searches in Pakistan</span>
+                <div class="tag-list">
+                    <span class="tag-pill">Zip Sleepsuit</span>
+                    <span class="tag-pill">Hospital Kit</span>
+                    <span class="tag-pill">Organic Romper</span>
+                    <span class="tag-pill">Muslin Swaddle</span>
+                    <span class="tag-pill">Scratch Mittens</span>
+                </div>
+            </div>
+
+            <!-- Instant Search Results -->
+            <div class="search-results-preview" id="search-results-preview"></div>
+        </div>
+    </div>
+
+    <!-- 14. INTERACTIVE MINI-CART DRAWER (PRICED IN PKR) -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Bag <span id="cart-items-count-text">2 Items</span></h3>
+            <button class="modal-close-btn" id="cart-close-btn" aria-label="Close shopping bag" style="position: static;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Free Delivery Meter (Rs. 4,999 Threshold in Pakistan) -->
+        <div class="shipping-meter">
+            <div class="shipping-text">
+                <span id="shipping-progress-text"><i class="fas fa-truck-fast"></i> You are <strong>Rs. 299</strong> away from <strong>Free Delivery!</strong></span>
+                <span id="shipping-percent">94%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="shipping-progress-fill" style="width: 94%;"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items List -->
+        <div class="cart-items" id="cart-items-list">
+            <!-- Sample Item 1 -->
+            <div class="cart-item" data-price="2450">
+                <div class="cart-item-thumb"><i class="fas fa-baby"></i></div>
+                <div class="cart-item-details">
+                    <h4 class="cart-item-title">CloudSoft™ Two-Way Zip Sleepsuit</h4>
+                    <span class="cart-item-meta">0-3 Months • Oatmeal Heather</span>
+                    <div class="cart-item-controls">
+                        <div class="qty-controls">
+                            <button class="qty-btn qty-minus">-</button>
+                            <span class="qty-val">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <span class="item-price">Rs. 2,450</span>
+                        <button class="remove-item-btn" title="Remove item"><i class="far fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Item 2 -->
+            <div class="cart-item" data-price="2250">
+                <div class="cart-item-thumb"><i class="fas fa-shirt"></i></div>
+                <div class="cart-item-details">
+                    <h4 class="cart-item-title">Ribbed Bamboo Organic Romper</h4>
+                    <span class="cart-item-meta">0-3 Months • Warm Terracotta</span>
+                    <div class="cart-item-controls">
+                        <div class="qty-controls">
+                            <button class="qty-btn qty-minus">-</button>
+                            <span class="qty-val">1</span>
+                            <button class="qty-btn qty-plus">+</button>
+                        </div>
+                        <span class="item-price">Rs. 2,250</span>
+                        <button class="remove-item-btn" title="Remove item"><i class="far fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cod-notice-badge">
+                <i class="fas fa-truck-ramp-box"></i> Cash on Delivery (COD) Available Nationwide
+            </div>
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cart-subtotal-price">Rs. 4,700</span>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">
+                Standard Delivery across Pakistan: Rs. 200 (FREE on orders over Rs. 4,999).
+            </p>
+            <button class="checkout-btn" id="checkout-btn">
+                <span>Proceed to Checkout</span>
+                <i class="fas fa-lock"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- 15. MOBILE OFF-CANVAS NAVIGATION DRAWER -->
+    <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+        <div class="mobile-drawer-header">
+            <a href="#home" class="mobile-logo">Seventh<span>grace</span></a>
+            <button class="modal-close-btn" id="mobile-drawer-close" aria-label="Close menu" style="position: static;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div style="background: var(--bg-creme); border-radius: 12px; padding: 10px 14px; margin-bottom: 18px; font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+            <span>🇵🇰</span> <span>Delivering to all Pakistan</span>
+        </div>
+
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+            <li>
+                <div class="mobile-nav-link" id="mobile-products-toggle" style="cursor: pointer;">
+                    <span>Newborn (0-12M)</span>
+                    <i class="fas fa-chevron-down" id="mobile-chevron" style="font-size: 0.8rem; transition: transform 0.3s ease;"></i>
+                </div>
+                <div class="mobile-accordion" id="mobile-accordion">
+                    <a href="#products" class="mobile-sub-link" data-filter="sleepsuits">Zip Sleepsuits & Footies</a>
+                    <a href="#products" class="mobile-sub-link" data-filter="rompers">Organic Rompers</a>
+                    <a href="#products" class="mobile-sub-link" data-filter="sets">Hospital Starter Sets</a>
+                    <a href="#products" class="mobile-sub-link" data-filter="accessories">Swaddles & Blankets</a>
+                    <a href="#products" class="mobile-sub-link" data-filter="accessories">Scratch Mittens & Caps</a>
+                </div>
+            </li>
+            <li><a href="#new-arrivals" class="mobile-nav-link">New Arrivals</a></li>
+            <li><a href="#spotlight" class="mobile-nav-link">Hospital Gift Set</a></li>
+            <li><a href="javascript:void(0)" class="mobile-nav-link" id="size-guide-mobile-btn">Size Guide</a></li>
+            <li><a href="#features" class="mobile-nav-link">Why Parents Choose Us</a></li>
+            <li><a href="#reviews" class="mobile-nav-link">Customer Reviews</a></li>
+        </ul>
+
+        <div style="margin-top: auto; padding-top: 25px;">
+            <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-link-btn" style="width: 100%; justify-content: center; margin-bottom: 15px;">
+                <i class="fab fa-whatsapp"></i> WhatsApp Order Assistance
+            </a>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; text-align: center;">
+                100% GOTS Certified Organic Baby Clothes • COD Nationwide
+            </p>
+        </div>
+    </nav>
+
+    <!-- 16. TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toast-notification">
+        <i class="fas fa-check-circle" style="color: var(--accent-color); font-size: 1.15rem;"></i>
+        <span id="toast-message">Item added to your shopping bag!</span>
+    </div>
+
+    <!-- ==========================================================================
+       JAVASCRIPT FOR ALL INTERACTIVE BEHAVIORS
+       ========================================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. TOAST NOTIFICATION UTILITY ---
+            const toast = document.getElementById('toast-notification');
+            const toastMessage = document.getElementById('toast-message');
+            let toastTimer;
+
+            window.showToast = function(message) {
+                clearTimeout(toastTimer);
+                toastMessage.textContent = message;
+                toast.classList.add('active');
+                toastTimer = setTimeout(() => {
+                    toast.classList.remove('active');
+                }, 3200);
+            };
+
+            // --- 2. ANNOUNCEMENT BAR DISMISS ---
+            const announcementBar = document.getElementById('announcement-bar');
+            const announcementCloseBtn = document.getElementById('announcement-close-btn');
+
+            if (announcementCloseBtn && announcementBar) {
+                announcementCloseBtn.addEventListener('click', () => {
+                    announcementBar.classList.add('closed');
+                });
+            }
+
+            // --- 3. DYNAMIC SLIDING NAV INDICATOR ---
+            const navIndicator = document.getElementById('nav-indicator');
+            const navLinks = document.querySelectorAll('.nav-pill .nav-item');
+            const desktopNav = document.getElementById('desktop-nav');
+
+            function updateIndicator(targetItem) {
+                if (!targetItem || !navIndicator || !desktopNav) return;
+                const link = targetItem.querySelector('.nav-link');
+                if (!link) return;
+
+                const navRect = desktopNav.getBoundingClientRect();
+                const linkRect = link.getBoundingClientRect();
+
+                const leftPos = linkRect.left - navRect.left;
+                const width = linkRect.width;
+
+                navIndicator.style.left = `${leftPos}px`;
+                navIndicator.style.width = `${width}px`;
+                navIndicator.style.opacity = '1';
+            }
+
+            const activeItem = document.querySelector('.nav-pill .nav-item.active');
+            if (activeItem) {
+                setTimeout(() => updateIndicator(activeItem), 120);
+            }
+
+            navLinks.forEach(item => {
+                item.addEventListener('mouseenter', () => updateIndicator(item));
+            });
+
+            if (desktopNav) {
+                desktopNav.addEventListener('mouseleave', () => {
+                    const currentActive = document.querySelector('.nav-pill .nav-item.active');
+                    if (currentActive) {
+                        updateIndicator(currentActive);
+                    } else {
+                        navIndicator.style.opacity = '0';
+                    }
+                });
+            }
+
+            navLinks.forEach(item => {
+                item.addEventListener('click', () => {
+                    navLinks.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    updateIndicator(item);
+                });
+            });
+
+            // --- 4. STICKY HEADER TRANSITION ON SCROLL ---
+            const headerWrapper = document.getElementById('header-wrapper');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    headerWrapper.classList.add('scrolled');
+                } else {
+                    headerWrapper.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // --- 5. CATEGORY FILTER TABS FOR NEW ARRIVALS ---
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            function applyFilter(category) {
+                filterBtns.forEach(b => {
+                    b.classList.toggle('active', b.dataset.filter === category);
+                });
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    applyFilter(btn.dataset.filter);
+                });
+            });
+
+            // Category card click navigates and filters
+            document.querySelectorAll('[data-filter]').forEach(elem => {
+                if (!elem.classList.contains('filter-btn')) {
+                    elem.addEventListener('click', (e) => {
+                        const cat = elem.dataset.filter;
+                        if (cat) {
+                            applyFilter(cat);
+                            const target = document.getElementById('new-arrivals');
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                            closeMobileMenu();
+                        }
+                    });
+                }
+            });
+
+            // --- 6. MOBILE OFF-CANVAS DRAWER ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileDrawer = document.getElementById('mobile-drawer');
+            const mobileDrawerOverlay = document.getElementById('mobile-drawer-overlay');
+            const mobileDrawerClose = document.getElementById('mobile-drawer-close');
+            const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+            const mobileAccordion = document.getElementById('mobile-accordion');
+            const mobileChevron = document.getElementById('mobile-chevron');
+
+            function openMobileMenu() {
+                mobileDrawer.classList.add('active');
+                mobileDrawerOverlay.classList.add('active');
+                document.body.classList.add('no-scroll');
+            }
+
+            function closeMobileMenu() {
+                if (mobileDrawer) mobileDrawer.classList.remove('active');
+                if (mobileDrawerOverlay) mobileDrawerOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+
+            if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+            if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeMobileMenu);
+            if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener('click', closeMobileMenu);
+
+            if (mobileProductsToggle) {
+                mobileProductsToggle.addEventListener('click', () => {
+                    mobileAccordion.classList.toggle('open');
+                    const isOpen = mobileAccordion.classList.contains('open');
+                    mobileChevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+                });
+            }
+
+            document.querySelectorAll('.mobile-nav-link:not(#mobile-products-toggle)').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // --- 7. SIZE GUIDE MODAL ---
+            const sizeGuideModal = document.getElementById('size-guide-modal');
+            const sizeGuideCloseBtn = document.getElementById('size-guide-close-btn');
+            const sizeGuideNavBtn = document.getElementById('size-guide-nav-btn');
+            const sizeGuideFooterBtn = document.getElementById('size-guide-footer-btn');
+            const sizeGuideMobileBtn = document.getElementById('size-guide-mobile-btn');
+
+            function openSizeGuide() {
+                sizeGuideModal.classList.add('active');
+                document.body.classList.add('no-scroll');
+                closeMobileMenu();
+            }
+
+            function closeSizeGuide() {
+                sizeGuideModal.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+
+            if (sizeGuideNavBtn) sizeGuideNavBtn.addEventListener('click', openSizeGuide);
+            if (sizeGuideFooterBtn) sizeGuideFooterBtn.addEventListener('click', openSizeGuide);
+            if (sizeGuideMobileBtn) sizeGuideMobileBtn.addEventListener('click', openSizeGuide);
+            if (sizeGuideCloseBtn) sizeGuideCloseBtn.addEventListener('click', closeSizeGuide);
+
+            sizeGuideModal.addEventListener('click', (e) => {
+                if (e.target === sizeGuideModal) closeSizeGuide();
+            });
+
+            // --- 8. QUICK VIEW MODAL ---
+            const quickViewModal = document.getElementById('quick-view-modal');
+            const quickViewCloseBtn = document.getElementById('quick-view-close-btn');
+            const qvTitle = document.getElementById('qv-title');
+            const qvPrice = document.getElementById('qv-price');
+            const qvIcon = document.getElementById('qv-icon');
+            const qvAddBtn = document.getElementById('qv-add-btn');
+
+            let currentQuickItem = null;
+
+            document.querySelectorAll('.quick-view-overlay-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.product-card');
+                    const title = card.querySelector('.product-title').textContent;
+                    const price = card.querySelector('.price-current').textContent;
+                    const iconClass = card.querySelector('.mock-icon').className;
+
+                    qvTitle.textContent = title;
+                    qvPrice.textContent = price;
+                    qvIcon.className = iconClass;
+
+                    currentQuickItem = {
+                        title: title,
+                        price: parseFloat(price.replace(/[^0-9.]/g, ''))
+                    };
+
+                    quickViewModal.classList.add('active');
+                    document.body.classList.add('no-scroll');
+                });
+            });
+
+            if (quickViewCloseBtn) {
+                quickViewCloseBtn.addEventListener('click', () => {
+                    quickViewModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            }
+
+            quickViewModal.addEventListener('click', (e) => {
+                if (e.target === quickViewModal) {
+                    quickViewModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+            });
+
+            // Size selection pills in Quick View
+            document.querySelectorAll('.size-pill-btn').forEach(p => {
+                p.addEventListener('click', () => {
+                    document.querySelectorAll('.size-pill-btn').forEach(x => x.classList.remove('active'));
+                    p.classList.add('active');
+                });
+            });
+
+            if (qvAddBtn) {
+                qvAddBtn.addEventListener('click', () => {
+                    if (currentQuickItem) {
+                        const selectedSize = document.querySelector('.size-pill-btn.active').textContent;
+                        addItemToCart(currentQuickItem.title, currentQuickItem.price, selectedSize);
+                        quickViewModal.classList.remove('active');
+                        document.body.classList.remove('no-scroll');
+                    }
+                });
+            }
+
+            // --- 9. SEARCH MODAL OVERLAY (PRICED IN PKR) ---
+            const searchOpenBtn = document.getElementById('search-open-btn');
+            const searchModal = document.getElementById('search-modal');
+            const searchCloseBtn = document.getElementById('search-close-btn');
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results-preview');
+            const tagPills = document.querySelectorAll('.tag-pill');
+
+            const searchDatabase = [
+                { name: "CloudSoft™ Two-Way Zip Sleepsuit", cat: "Sleepsuits", price: "Rs. 2,450" },
+                { name: "Ribbed Bamboo Organic Romper", cat: "Rompers", price: "Rs. 2,250" },
+                { name: "7-Piece Hospital Welcome Kit", cat: "Sets", price: "Rs. 5,950" },
+                { name: "Organic Muslin Swaddle Blanket Duo", cat: "Accessories", price: "Rs. 2,850" },
+                { name: "Heirloom Kimono Wrap Onesie Set", cat: "Rompers", price: "Rs. 3,450" },
+                { name: "Buttery Soft Waffle Footie", cat: "Sleepsuits", price: "Rs. 2,550" },
+                { name: "Newborn Scratch Mittens & Cap Set", cat: "Accessories", price: "Rs. 1,450" },
+                { name: "Bespoke Knit Cardigan & Bonnet Set", cat: "Sets", price: "Rs. 3,850" }
+            ];
+
+            function openSearch() {
+                searchModal.classList.add('active');
+                document.body.classList.add('no-scroll');
+                setTimeout(() => searchInput.focus(), 150);
+            }
+
+            function closeSearch() {
+                searchModal.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+                searchInput.value = '';
+                searchResults.classList.remove('show');
+            }
+
+            if (searchOpenBtn) searchOpenBtn.addEventListener('click', openSearch);
+            if (searchCloseBtn) searchCloseBtn.addEventListener('click', closeSearch);
+
+            searchModal.addEventListener('click', (e) => {
+                if (e.target === searchModal) closeSearch();
+            });
+
+            tagPills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    searchInput.value = pill.textContent.trim();
+                    filterSearch(searchInput.value);
+                });
+            });
+
+            function filterSearch(term) {
+                const q = term.toLowerCase().trim();
+                if (!q) {
+                    searchResults.classList.remove('show');
+                    return;
+                }
+
+                const matches = searchDatabase.filter(item => 
+                    item.name.toLowerCase().includes(q) || item.cat.toLowerCase().includes(q)
+                );
+
+                if (matches.length > 0) {
+                    searchResults.innerHTML = matches.map(item => `
+                        <div class="search-result-item" style="cursor: pointer;" onclick="document.getElementById('new-arrivals').scrollIntoView({behavior: 'smooth'}); closeSearch();">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(201,138,122,0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-color);">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <div>
+                                    <strong style="font-size: 0.92rem; color: var(--text-dark);">${item.name}</strong>
+                                    <div style="font-size: 0.74rem; color: var(--text-muted);">${item.cat} • Newborn 0-12M</div>
+                                </div>
+                            </div>
+                            <span style="font-weight: 700; color: var(--text-dark); font-size: 0.92rem;">${item.price}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    searchResults.innerHTML = `<div style="padding: 15px; text-align: center; color: var(--text-muted); font-size: 0.88rem;">No products found for "${term}". Try "Sleepsuit" or "Hospital".</div>`;
+                }
+                searchResults.classList.add('show');
+            }
+
+            searchInput.addEventListener('input', (e) => filterSearch(e.target.value));
+
+            // --- 10. CART DRAWER & PKR CALCULATIONS ---
+            const cartOpenBtn = document.getElementById('cart-open-btn');
+            const cartDrawer = document.getElementById('cart-drawer');
+            const cartDrawerOverlay = document.getElementById('cart-drawer-overlay');
+            const cartCloseBtn = document.getElementById('cart-close-btn');
+            const cartItemsList = document.getElementById('cart-items-list');
+            const cartBadge = document.getElementById('cart-badge');
+            const cartItemsCountText = document.getElementById('cart-items-count-text');
+            const cartSubtotalPrice = document.getElementById('cart-subtotal-price');
+            const shippingProgressText = document.getElementById('shipping-progress-text');
+            const shippingProgressFill = document.getElementById('shipping-progress-fill');
+            const shippingPercent = document.getElementById('shipping-percent');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            function openCart() {
+                cartDrawer.classList.add('active');
+                cartDrawerOverlay.classList.add('active');
+                document.body.classList.add('no-scroll');
+            }
+
+            function closeCart() {
+                cartDrawer.classList.remove('active');
+                cartDrawerOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+
+            if (cartOpenBtn) cartOpenBtn.addEventListener('click', openCart);
+            if (cartCloseBtn) cartCloseBtn.addEventListener('click', closeCart);
+            if (cartDrawerOverlay) cartDrawerOverlay.addEventListener('click', closeCart);
+
+            function updateCartTotals() {
+                const items = cartItemsList.querySelectorAll('.cart-item');
+                let total = 0;
+                let itemCount = 0;
+
+                items.forEach(item => {
+                    const price = parseFloat(item.dataset.price);
+                    const qty = parseInt(item.querySelector('.qty-val').textContent);
+                    total += price * qty;
+                    itemCount += qty;
+                });
+
+                if (cartBadge) cartBadge.textContent = itemCount;
+                if (cartItemsCountText) cartItemsCountText.textContent = `${itemCount} ${itemCount === 1 ? 'Item' : 'Items'}`;
+                if (cartSubtotalPrice) cartSubtotalPrice.textContent = `Rs. ${total.toLocaleString()}`;
+
+                // Free Delivery Threshold in Pakistan = Rs. 4,999
+                const threshold = 4999;
+                if (total >= threshold) {
+                    shippingProgressFill.style.width = '100%';
+                    shippingPercent.textContent = '100%';
+                    shippingProgressText.innerHTML = '<i class="fas fa-check-circle" style="color: #48bb78;"></i> 🎉 You unlocked <strong>Free Delivery across Pakistan!</strong>';
+                } else {
+                    const diff = threshold - total;
+                    const percent = Math.min(Math.round((total / threshold) * 100), 99);
+                    shippingProgressFill.style.width = `${percent}%`;
+                    shippingPercent.textContent = `${percent}%`;
+                    shippingProgressText.innerHTML = `<i class="fas fa-truck-fast"></i> You are <strong>Rs. ${diff.toLocaleString()}</strong> away from <strong>Free Delivery</strong>`;
+                }
+            }
+
+            window.addItemToCart = function(title, price, size = '0-3 Months') {
+                const newItem = document.createElement('div');
+                newItem.className = 'cart-item';
+                newItem.dataset.price = price;
+                newItem.innerHTML = `
+                    <div class="cart-item-thumb"><i class="fas fa-baby"></i></div>
+                    <div class="cart-item-details">
+                        <h4 class="cart-item-title">${title}</h4>
+                        <span class="cart-item-meta">${size} • 100% Organic</span>
+                        <div class="cart-item-controls">
+                            <div class="qty-controls">
+                                <button class="qty-btn qty-minus">-</button>
+                                <span class="qty-val">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                            <span class="item-price">Rs. ${price.toLocaleString()}</span>
+                            <button class="remove-item-btn" title="Remove item"><i class="far fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                `;
+
+                cartItemsList.appendChild(newItem);
+                updateCartTotals();
+                showToast(`"${title}" added to your bag!`);
+                openCart();
+            };
+
+            // Add to Bag buttons on product cards
+            document.querySelectorAll('.add-cart-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const title = btn.dataset.title;
+                    const price = parseFloat(btn.dataset.price);
+                    addItemToCart(title, price);
+                });
+            });
+
+            // Cart Items List Events (Quantity & Remove)
+            cartItemsList.addEventListener('click', (e) => {
+                const item = e.target.closest('.cart-item');
+                if (!item) return;
+
+                if (e.target.classList.contains('qty-plus')) {
+                    const qtyElem = item.querySelector('.qty-val');
+                    qtyElem.textContent = parseInt(qtyElem.textContent) + 1;
+                    updateCartTotals();
+                } else if (e.target.classList.contains('qty-minus')) {
+                    const qtyElem = item.querySelector('.qty-val');
+                    let current = parseInt(qtyElem.textContent);
+                    if (current > 1) {
+                        qtyElem.textContent = current - 1;
+                        updateCartTotals();
+                    } else {
+                        item.remove();
+                        updateCartTotals();
+                        showToast("Item removed from your bag.");
+                    }
+                } else if (e.target.closest('.remove-item-btn')) {
+                    item.remove();
+                    updateCartTotals();
+                    showToast("Item removed from your bag.");
+                }
+            });
+
+            if (checkoutBtn) {
+                checkoutBtn.addEventListener('click', () => {
+                    showToast("Order Simulation: Direct Cash on Delivery (COD) Checkout initiated!");
+                });
+            }
+
+            // --- 11. WISHLIST TOGGLE ---
+            const wishlistBadge = document.getElementById('wishlist-badge');
+            let wishlistCount = 3;
+
+            document.querySelectorAll('.wishlist-toggle').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    btn.classList.toggle('active');
+                    const icon = btn.querySelector('i');
+
+                    if (btn.classList.contains('active')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        wishlistCount++;
+                        showToast("Saved to your wishlist ❤️");
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        wishlistCount = Math.max(0, wishlistCount - 1);
+                        showToast("Removed from wishlist.");
+                    }
+                    if (wishlistBadge) wishlistBadge.textContent = wishlistCount;
+                });
+            });
+
+            const topWishlistBtn = document.getElementById('wishlist-btn');
+            if (topWishlistBtn) {
+                topWishlistBtn.addEventListener('click', () => {
+                    showToast(`You have ${wishlistCount} newborn items in your wishlist.`);
+                });
+            }
+
+            // --- 12. KEYBOARD ESCAPE LISTENER ---
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeSearch();
+                    closeCart();
+                    closeMobileMenu();
+                    closeSizeGuide();
+                    if (quickViewModal) quickViewModal.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+            });
+
+            // Initial calculation
+            updateCartTotals();
+
+        });
+    </script>
+</body>
+</html>
